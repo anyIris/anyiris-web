@@ -11,6 +11,7 @@
         @stack('before_scripts')
 
         {{-- fonts --}}
+        <link rel="stylesheet" href="https://use.typekit.net/umc1nis.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         {{-- styles --}}

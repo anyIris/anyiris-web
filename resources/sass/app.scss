@@ -1,6 +1,7 @@
 // Util
 @import "util/_variables";
 @import "util/_common";
+@import "util/_font";
 
 
 @import "reset.scss";
@@ -8,6 +9,7 @@
 body {
     background-color: #222;
     color: $font_color_grey;
+    @include default_font;
 
     header{
         padding: 12px 0;
