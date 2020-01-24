@@ -21,8 +21,13 @@
     <body class="@yield('page', '')">
         <div id="app">
             @include('frontend.layouts.header')
-            <div class="container">
-                @yield('content')
+            <div class="content">
+                <div class="title_area">
+                    <h1><a href="/">LET'S BE ANYTHING</a></h1>
+                </div>
+                <div class="container">
+                    @yield('content')
+                </div>
             </div>
         </div>
         @stack('after_scripts')

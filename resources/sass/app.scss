@@ -7,74 +7,52 @@
 @import "reset.scss";
 
 body {
-    background-color: #222;
-    color: $font_color_grey;
+    background: $main_color;
     @include default_font;
-
-    header{
-        padding: 12px 0;
-        background: $nav_color;
-        a{
-            color: $font_color_default;
-            text-decoration: none;
-            opacity: 0.6;
-            transition: all .2s ease;
-        }
-        .container{
+    // color: $third_color;    
+}
+.container{
+    width: $site_max_width;
+    margin: 0 auto;
+}
+header{
+    nav{
+        ul{
             display: flex;
-            justify-content: space-between;
-            width: $site_max_width;
-            margin: 0 auto;
-        }
-        .title_area{
-            color: $font_color_default;
-            h1{
-                margin-bottom: 4px;
-                font-size: $font_size_title;
+            li{
+                margin: 10px 10px 13px;
                 a{
-                    font-weight: bold;
-                    &:hover{
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-        .menu{
-            nav {
-                margin-top: 15px;
-                ul{
-                    display: flex;
-                    justify-content: space-between;
-                    
-                    li{
-                        a{
-                            color: $font_color_default;
-                            text-decoration: none;
-                            &:hover{
-                                opacity: 1;
-                            }
-                            &:after{
-                                margin: 0 6px;
-                                content: '/';
-                                opacity: 0.5;
-                            }
-                            
-                        }
-                        &:last-child{
-                            a{
-                                &:after{
-                                    content: '';
-                                }
-                            }
-                        }
-                    }
+                    @include thin_font;
+                    font-size: 12px;
+                    color: $grey;
+                    text-decoration: none;
                 }
             }
         }
     }
 }
 
-.container{
-    width: $site_max_width;
-    margin: 0 auto;
+.content{
+    margin: 30px;
+    margin-top: 0;
+    height: 980px;// temp code
+    background: #fff;
+    .container{
+        padding-top: 50px;
+    }
+    .title_area{
+        background: $main_color;
+        padding: 50px 0 80px;
+        text-align: center;
+        color: $dark_point_color;
+        h1{
+            @include bold_font;
+            font-size: 50px;
+            transition: all .2s ease;
+            &:hover{
+                color: $point_color;
+            }
+        }
+    }
 }
+
