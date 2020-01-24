@@ -1,0 +1,78 @@
+// Util
+@import "util/_variables";
+@import "util/_common";
+
+
+@import "reset.scss";
+
+body {
+    background-color: #222;
+    color: $font_color_grey;
+
+    header{
+        padding: 12px 0;
+        background: $nav_color;
+        a{
+            color: $font_color_default;
+            text-decoration: none;
+            opacity: 0.6;
+            transition: all .2s ease;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            width: $site_max_width;
+            margin: 0 auto;
+        }
+        .title_area{
+            color: $font_color_default;
+            h1{
+                margin-bottom: 4px;
+                font-size: $font_size_title;
+                a{
+                    font-weight: bold;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .menu{
+            nav {
+                margin-top: 15px;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    li{
+                        a{
+                            color: $font_color_default;
+                            text-decoration: none;
+                            &:hover{
+                                opacity: 1;
+                            }
+                            &:after{
+                                margin: 0 6px;
+                                content: '/';
+                                opacity: 0.5;
+                            }
+                            
+                        }
+                        &:last-child{
+                            a{
+                                &:after{
+                                    content: '';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: $site_max_width;
+    margin: 0 auto;
+}

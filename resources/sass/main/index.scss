@@ -1,0 +1,34 @@
+
+@import '../util/_variables.scss';
+
+$box_color: #fff;
+
+.wrap{
+    margin: 25px 0;
+}
+
+.profile_wrap{
+    width: 100%;
+    .profile{
+        .info{
+            width: 90%;
+            padding: 0 0 20px 0;
+            border: 1px solid #222;
+            border-radius: 10px;
+            background: #333;
+            text-align: center;
+
+            dl{
+                dt{
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    color: $font_color_default;
+                }
+                dd{
+                    margin-bottom: 4px;
+                    color: $font_color_grey;
+                }
+            }
+        }
+    }
+}

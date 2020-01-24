@@ -1,0 +1,28 @@
+.wrap {
+  margin: 25px 0;
+}
+
+.profile_wrap {
+  width: 100%;
+}
+
+.profile_wrap .profile .info {
+  width: 90%;
+  padding: 0 0 20px 0;
+  border: 1px solid #222;
+  border-radius: 10px;
+  background: #333;
+  text-align: center;
+}
+
+.profile_wrap .profile .info dl dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.profile_wrap .profile .info dl dd {
+  margin-bottom: 4px;
+  color: #BDBDBD;
+}
+
