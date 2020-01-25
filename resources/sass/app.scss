@@ -9,7 +9,7 @@
 body {
     background: $main_color;
     @include default_font;
-    // color: $third_color;    
+    color: #171717;
 }
 .container{
     width: $site_max_width;
@@ -30,29 +30,52 @@ header{
             }
         }
     }
+    .title_area{
+        background: $main_color;
+        padding: 30px 0 40px;
+        text-align: center;
+        color: #a60505;
+        h1{
+            @include bold_font;
+            font-size: 50px;
+            a{
+                transition: all .2s ease;
+                &:hover{
+                    color: $point_color;
+                }
+            }
+        }
+    }
+}
+.sub_nav{
+    padding: 20px 0;
+    border-bottom: 1px solid $border_grey_color;
+    nav{
+        ul.menu_list{
+            display: flex;
+            justify-content: center;
+            li{
+                margin-left: 12px;
+                a{
+                    padding: 12px;
+                    font-size: 1em;
+                    @include default_font;
+                    transition: all .2s ease;
+
+                    &:hover{
+                        color:$hover_color;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .content{
     margin: 30px;
     margin-top: 0;
     height: 980px;// temp code
-    background: #fff;
-    .container{
-        padding-top: 50px;
-    }
-    .title_area{
-        background: $main_color;
-        padding: 50px 0 80px;
-        text-align: center;
-        color: $dark_point_color;
-        h1{
-            @include bold_font;
-            font-size: 50px;
-            transition: all .2s ease;
-            &:hover{
-                color: $point_color;
-            }
-        }
-    }
+    background: #fff;    
 }
+
 

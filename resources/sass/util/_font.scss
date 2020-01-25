@@ -1,18 +1,18 @@
 @mixin default_font{
-    font-family: acumin-pro, sans-serif;
+    font-family: acumin-pro, 'Gothic A1', sans-serif;
     font-weight: 400;
     font-style: normal;  
 }
 
 @mixin thin_font{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Gothic A1', sans-serif;
     font-weight: 400;
     font-style: normal;  
 }
 
 
 @mixin bold_font{
-    font-family: acumin-pro, sans-serif;
+    font-family: acumin-pro, 'Gothic A1', sans-serif;
     font-weight: 700;
     font-style: normal;
 }

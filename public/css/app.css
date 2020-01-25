@@ -180,9 +180,10 @@ a {
 
 body {
   background: #1f2833;
-  font-family: acumin-pro, sans-serif;
+  font-family: acumin-pro, "Gothic A1", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #171717;
 }
 
 .container {
@@ -200,7 +201,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Gothic A1", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
@@ -208,34 +209,63 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header .title_area {
+  background: #1f2833;
+  padding: 30px 0 40px;
+  text-align: center;
+  color: #a60505;
+}
+
+header .title_area h1 {
+  font-family: acumin-pro, "Gothic A1", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+header .title_area h1 a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header .title_area h1 a:hover {
+  color: #66fcf1;
+}
+
+.sub_nav {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.sub_nav nav ul.menu_list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.sub_nav nav ul.menu_list li {
+  margin-left: 12px;
+}
+
+.sub_nav nav ul.menu_list li a {
+  padding: 12px;
+  font-size: 1em;
+  font-family: acumin-pro, "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.sub_nav nav ul.menu_list li a:hover {
+  color: #a60505;
+}
+
 .content {
   margin: 30px;
   margin-top: 0;
   height: 980px;
   background: #fff;
-}
-
-.content .container {
-  padding-top: 50px;
-}
-
-.content .title_area {
-  background: #1f2833;
-  padding: 50px 0 80px;
-  text-align: center;
-  color: #45A29E;
-}
-
-.content .title_area h1 {
-  font-family: acumin-pro, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 50px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.content .title_area h1:hover {
-  color: #66fcf1;
 }
 

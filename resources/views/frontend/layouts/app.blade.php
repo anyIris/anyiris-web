@@ -12,6 +12,7 @@
 
         {{-- fonts --}}
         <link rel="stylesheet" href="https://use.typekit.net/umc1nis.css">
+        <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         {{-- styles --}}
@@ -22,9 +23,7 @@
         <div id="app">
             @include('frontend.layouts.header')
             <div class="content">
-                <div class="title_area">
-                    <h1><a href="/">LET'S BE ANYTHING</a></h1>
-                </div>
+                @include('frontend.layouts.nav')
                 <div class="container">
                     @yield('content')
                 </div>
