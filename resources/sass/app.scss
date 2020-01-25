@@ -9,7 +9,7 @@
 body {
     background: $main_color;
     @include default_font;
-    color: #171717;
+    color: $font_def_color;
 }
 .container{
     width: $site_max_width;
@@ -34,7 +34,7 @@ header{
         background: $main_color;
         padding: 30px 0 40px;
         text-align: center;
-        color: #a60505;
+        color: #ffffff;
         h1{
             @include bold_font;
             font-size: 50px;
@@ -63,7 +63,7 @@ header{
                     transition: all .2s ease;
 
                     &:hover{
-                        color:$hover_color;
+                        color:$font_act_color;
                     }
                 }
             }
@@ -74,7 +74,7 @@ header{
 .content{
     margin: 30px;
     margin-top: 0;
-    height: 980px;// temp code
+    padding-bottom: 30px;
     background: #fff;    
 }
 

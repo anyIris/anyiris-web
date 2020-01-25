@@ -11,9 +11,9 @@
             <article>
                 <div class="post_desc">
                     <div class="post_tag">tech</div>
-                    <h3>Lorem Ipsum</h3>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
                     <div class="post_etc">
-                        <div class="post_author">anyiris</div>
+                        <div class="post_author"><i class="fa fa-at"></i>anyiris</div>
                         <div class="post_date">2020.01.25</div>
                     </div>
                     <p class="description">
@@ -24,6 +24,43 @@
         </div>
         <div class="post_image">
         <img src="/assets/images/sample/pexels-photo-532571.jpeg" />
+        </div>
+    </div>
+    <div class="post_detail has_image">
+        <div class="post_info">
+            <article>
+                <div class="post_desc">
+                    <div class="post_tag">tech</div>
+                    <h3>Lorem Ipsum</h3>
+                    <div class="post_etc">
+                        <div class="post_author"><i class="fa fa-at"></i>anyiris</div>
+                        <div class="post_date">2020.01.25</div>
+                    </div>
+                    <p class="description">
+                        국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다. 모든 국민은 법률이 정하는 바에 의하여 국가기관에 문서로 청원할 권리를 가진다.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="post_image">
+        <img src="/assets/images/sample/pexels-photo-532571.jpeg" />
+        </div>
+    </div>
+    <div class="post_detail">
+        <div class="post_info">
+            <article>
+                <div class="post_desc">
+                    <div class="post_tag">tech</div>
+                    <h3>Lorem Ipsum</h3>
+                    <div class="post_etc">
+                        <div class="post_author"><i class="fa fa-at"></i>anyiris</div>
+                        <div class="post_date">2020.01.25</div>
+                    </div>
+                    <p class="description">
+                        국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다. 모든 국민은 법률이 정하는 바에 의하여 국가기관에 문서로 청원할 권리를 가진다.
+                    </p>
+                </div>
+            </article>
         </div>
     </div>
 </div>

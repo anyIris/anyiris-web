@@ -55,27 +55,34 @@
   display: -webkit-box;
   display: flex;
   height: 334px;
+  margin-bottom: 40px;
   border: 1px solid #DEDEDE;
 }
 
 .post_list .post_detail .post_info {
   position: relative;
-  width: 60%;
+  width: 100%;
 }
 
 .post_list .post_detail .post_info article {
   position: absolute;
   top: 50%;
+  left: 50%;
+  width: 70%;
   padding: 0 40px;
   text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 .post_list .post_detail .post_info article .post_desc h3 {
   font-size: 1.5em;
   color: #010101;
   font-weight: bold;
+}
+
+.post_list .post_detail .post_info article .post_desc h3 a:hover {
+  color: #a60505;
 }
 
 .post_list .post_detail .post_info article .post_desc .post_tag {
@@ -97,6 +104,11 @@
   color: #a60505;
 }
 
+.post_list .post_detail .post_info article .post_desc .post_etc .post_author i {
+  display: inline-block;
+  margin-right: 2px;
+}
+
 .post_list .post_detail .post_info article .post_desc .post_etc .post_author:after {
   display: inline-block;
   width: 1px;
@@ -114,7 +126,7 @@
   display: block;
   top: 24px;
   bottom: 3px;
-  left: 44%;
+  left: 46%;
   width: 70px;
   height: 1px;
   background: #a60505;
@@ -125,14 +137,36 @@
   margin-top: 22px;
   font-size: 0.85em;
   line-height: 1.4;
+  white-space: pre-line;
 }
 
-.post_list .post_detail .post_image {
+.post_list .post_detail:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+}
+
+.post_list .post_detail.has_image .post_info {
+  width: 60%;
+}
+
+.post_list .post_detail.has_image .post_info article {
+  width: auto;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.post_list .post_detail.has_image .post_info article .post_desc .post_etc:after {
+  left: 45%;
+}
+
+.post_list .post_detail.has_image .post_image {
   width: 40%;
   overflow: hidden;
 }
 
-.post_list .post_detail .post_image img {
+.post_list .post_detail.has_image .post_image img {
   display: block;
   width: calc(100% + 2px);
   height: 100%;
@@ -140,7 +174,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.post_list .post_detail .post_image:hover img {
+.post_list .post_detail.has_image .post_image:hover img {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }

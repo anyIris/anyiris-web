@@ -213,7 +213,7 @@ header .title_area {
   background: #1f2833;
   padding: 30px 0 40px;
   text-align: center;
-  color: #a60505;
+  color: #ffffff;
 }
 
 header .title_area h1 {
@@ -234,7 +234,7 @@ header .title_area h1 a:hover {
 
 .sub_nav {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #DEDEDE;
 }
 
 .sub_nav nav ul.menu_list {
@@ -265,7 +265,7 @@ header .title_area h1 a:hover {
 .content {
   margin: 30px;
   margin-top: 0;
-  height: 980px;
+  padding-bottom: 30px;
   background: #fff;
 }
 

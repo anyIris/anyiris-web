@@ -10,24 +10,32 @@
     .post_detail{
         display: flex;
         height: 334px;
+        margin-bottom: 40px;
         border: 1px solid #DEDEDE;
         .post_info{
             position: relative;
-            width: 60%;
+            width: 100%;
             article{
                 position:absolute;
                 top: 50%;
+                left: 50%;
+                width: 70%;
                 padding: 0 40px;
                 text-align: center;
-                transform: translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
                 .post_desc{
                     h3{
                         font-size: 1.5em;
                         color: $post_title_color;
                         font-weight: bold;
+                        a{
+                            &:hover{
+                                color: $font_act_color;
+                            }
+                        }
                     }
                     .post_tag{
-                        color: #a60505;
+                        color: $font_act_color;
                         font-size: 0.9em;
                     }
                     .post_etc{
@@ -37,7 +45,11 @@
                         font-size: 0.9em;
                         justify-content: center;
                         .post_author {
-                            color: #a60505;
+                            color: $font_act_color;
+                            i {
+                                display: inline-block;
+                                margin-right: 2px;
+                            }
                             &:after{
                                 display: inline-block;
                                 width: 1px;
@@ -55,17 +67,39 @@
                             display: block;
                             top: 24px;
                             bottom: 3px;
-                            left: 44%;
+                            left: 46%;
                             width: 70px;
                             height: 1px;
-                            background: #a60505;                            
+                            background: $font_act_color;                            
                             content: "";
                         }
                     }
                     .description{
                         margin-top: 22px;
                         font-size: 0.85em;
-                        line-height: 1.4    ;
+                        line-height: 1.4;
+                        white-space: pre-line;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(2n){
+            flex-direction: row-reverse;
+        }
+    }
+    .post_detail.has_image{
+        .post_info{
+            width: 60%;
+            article{
+                width: auto;
+                left: 0;
+                transform: translateY(-50%);
+                .post_desc{
+                    .post_etc{
+                        &:after{
+                            left: 45%;
+                        }
                     }
                 }
             }
