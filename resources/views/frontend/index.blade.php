@@ -23,7 +23,7 @@
             </article>
         </div>
         <div class="post_image">
-        <img src="/assets/images/sample/pexels-photo-532571.jpeg" />
+        <a href="#"><img src="/assets/images/sample/pexels-photo-532571.jpeg" /></a>
         </div>
     </div>
     <div class="post_detail has_image">
@@ -43,7 +43,7 @@
             </article>
         </div>
         <div class="post_image">
-        <img src="/assets/images/sample/pexels-photo-532571.jpeg" />
+            <a href="#"><img src="/assets/images/sample/pexels-photo-532571.jpeg" /></a>
         </div>
     </div>
     <div class="post_detail">
