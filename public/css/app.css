@@ -271,7 +271,7 @@ header .title_area h1 a:hover {
 
 .content {
   min-width: 1280px;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 30px;
   margin-top: 0;
   padding-bottom: 30px;

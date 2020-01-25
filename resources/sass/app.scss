@@ -72,10 +72,9 @@ header{
         }
     }
 }
-
 .content{
     min-width: $site_min_width;
-    max-width: $site_max_width;
+    max-width: 100%;
     margin: 30px;
     margin-top: 0;
     padding-bottom: 30px;
