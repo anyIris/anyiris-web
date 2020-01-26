@@ -29,6 +29,7 @@
                     @yield('content')
                 </div>
             </div>
+            @include('frontend.layouts.footer')
         </div>
         @stack('after_scripts')
     </body>
