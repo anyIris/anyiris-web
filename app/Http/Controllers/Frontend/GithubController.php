@@ -11,14 +11,14 @@ class GithubController extends Controller
 
     }
 
-    public function index(){
-        $curlOption = [
+    public function getRepos($name){
+        $options = [
             CURLOPT_HTTPHEADER => [
-                'Accept: application/vnd.github.v3+json',
-                'User-Agent: Awesome-Octocat-App'
+                'Authorization: token '.env('GITHUB_API_TOKEN'),
+                'user-agent: '.env('GITHUB_API_USER_AGENT')
             ]
         ];
-        $resSchema = UtilCurl::curlGet('https://api.github.com/users/octocat/orgs',[], $curlOption);
+        $resSchema = UtilCurl::connect('https://api.github.com/users/'.$name.'/repos', false, [],$options);
         return $resSchema;
     }
 }

@@ -1,4 +1,4 @@
-<?
+<?php
 namespace App\Http\Util;
 
 class UtilCurl{
@@ -6,32 +6,26 @@ class UtilCurl{
 
     }
 
-    public static function curlPost($host, $params=[], $options=[]){
+    public static function connect($host, $isPost, $params=[], $options=[]){
         $ch = curl_init($host);
 
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+        if($isPost){
+            curl_setopt($ch, CURLOPT_POST, $isPost);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+        }
+        
         foreach($options as $key=>$value){
+            var_dump($value);
             curl_setopt($ch, $key, $value);
         }
+
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         
         $result = curl_exec($ch);
+        var_dump($result);
         curl_close($ch);
 
         return $result;
 
     }
-
-    public static function curlGet($host, $option=[]){
-        $ch = curl_init($host);
-        
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        
-        $result = curl_exec($ch);
-        curl_close($ch);
-
-        return $result;
-    }
-
 }

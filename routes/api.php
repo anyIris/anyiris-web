@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/github', [GithubController::class, 'index'])->name('github_index');
+Route::get('/github/{name}/repos', [GithubController::class, 'getRepos'])->name('github_repos');
