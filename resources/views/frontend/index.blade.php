@@ -5,7 +5,7 @@
 @section('page', 'main')
 @section('content')
 <div class="wrapper">
-<div class="post_list">
+<section class="post_list">
     <div class="post_detail has_image">
         <div class="post_info">
             <article>
@@ -63,6 +63,29 @@
             </article>
         </div>
     </div>
+</section>
+<div class="bottom">
+    <section class="summary">
+        <h2><i class="fab fa-github"></i>REPOSITORY</h2>
+        <hr/>
+        <ul>
+            <li><a href="#">repo name</a></li>
+            <li><a href="#">repo name</a></li>
+            <li><a href="#">repo name</a></li>
+            <li><a href="#">repo name</a></li>
+        </ul>
+    </section>
+    <section class="summary">
+        <h2><i class="fas fa-blog"></i>최신글</h2>
+        <hr/>
+        <ul>
+            <li><a href="#">가나다라</a></li>
+            <li><a href="#">제목1</a></li>
+            <li><a href="#">제목2</a></li>
+            <li><a href="#">제목3</a></li>
+        </ul>
+    </section>
+   
 </div>
 </div>
 @endsection

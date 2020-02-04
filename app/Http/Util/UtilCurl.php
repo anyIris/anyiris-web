@@ -15,14 +15,12 @@ class UtilCurl{
         }
         
         foreach($options as $key=>$value){
-            var_dump($value);
             curl_setopt($ch, $key, $value);
         }
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         
         $result = curl_exec($ch);
-        var_dump($result);
         curl_close($ch);
 
         return $result;

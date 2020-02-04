@@ -1,17 +1,16 @@
 <?php
-namespace App\Http\Controllers\Frontend;
+namespace App\Http\API;
 
-use App\Http\Controllers\Controller;
 use App\Http\Util\UtilCurl;
 use Illuminate\Http\Request;
 
-class GithubController extends Controller
+class Github
 {
     public function __constructor(){
 
     }
 
-    public function getRepos($name){
+    public static function getRepos($name){
         $options = [
             CURLOPT_HTTPHEADER => [
                 'Authorization: token '.env('GITHUB_API_TOKEN'),

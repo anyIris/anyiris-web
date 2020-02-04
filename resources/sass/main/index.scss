@@ -123,3 +123,45 @@
         }
     }
 }
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    .summary{
+        width: 33%;
+        margin: 20px;
+        h2{
+            font-size: 1.4em;
+            color: $font_def_color;
+            i{
+                display: inline-block;
+                margin-right: 5px;
+                color: $font_act_color;
+            }
+        }
+        ul{
+            li{
+                margin-bottom: 6px;
+                a{
+                    display: inline-block;
+                    padding: 4px 10px 8px 0;
+                    &:hover{
+                        color: $font_act_hover;
+                    }
+                    
+                }
+                &::after{
+                    content: " ";
+                    display: block;
+                    width: 100%;
+                    margin-top: 7px;
+                    unicode-bidi: isolate;
+                    overflow: hidden;
+                    border-style: inset;
+                    border-width: 1px;
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}

@@ -180,3 +180,53 @@
           transform: scale(1.1, 1.1);
 }
 
+.bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.bottom .summary {
+  width: 33%;
+  margin: 20px;
+}
+
+.bottom .summary h2 {
+  font-size: 1.4em;
+  color: #171717;
+}
+
+.bottom .summary h2 i {
+  display: inline-block;
+  margin-right: 5px;
+  color: #a60505;
+}
+
+.bottom .summary ul li {
+  margin-bottom: 6px;
+}
+
+.bottom .summary ul li a {
+  display: inline-block;
+  padding: 4px 10px 8px 0;
+}
+
+.bottom .summary ul li a:hover {
+  color: #f2132d;
+}
+
+.bottom .summary ul li::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: -moz-isolate;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  opacity: 0.4;
+}
+

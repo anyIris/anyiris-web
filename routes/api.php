@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Frontend\GithubController;
+use App\Http\Controllers\API\GithubController;
 
 /*
 |--------------------------------------------------------------------------
