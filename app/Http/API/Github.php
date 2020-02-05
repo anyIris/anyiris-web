@@ -17,7 +17,18 @@ class Github
                 'user-agent: '.env('GITHUB_API_USER_AGENT')
             ]
         ];
-        $resSchema = UtilCurl::connect('https://api.github.com/users/'.$name.'/repos', false, [],$options);
-        return $resSchema;
+
+        $params = [
+            'visibility' => 'public',
+            'affiliation' => 'owner',
+            'sort' => 'updated'
+        ];
+        
+         $result = UtilCurl::connect('https://api.github.com/user/repos', false, $params ,$options);
+         $result = json_decode($result);
+         if(isset($result->message)){
+             $result = [];
+         }
+        return $result;
     }
 }

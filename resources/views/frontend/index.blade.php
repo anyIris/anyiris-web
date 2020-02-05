@@ -69,20 +69,27 @@
         <h2><i class="fab fa-github"></i>REPOSITORY</h2>
         <hr/>
         <ul>
-            <li><a href="#">repo name</a></li>
-            <li><a href="#">repo name</a></li>
-            <li><a href="#">repo name</a></li>
-            <li><a href="#">repo name</a></li>
+            @if($repos)
+            @foreach($repos as $key => $value)
+            <li><a href="https://github.com/{{$value->full_name}}">{{$value->name}}</a></li>
+            @endforeach
+            @else
+            <li class="none_data">생성된 저장소가 없습니다.</li>
+            @endif
         </ul>
     </section>
     <section class="summary">
         <h2><i class="fas fa-blog"></i>최신글</h2>
         <hr/>
         <ul>
+            @if($recentPost)
             <li><a href="#">가나다라</a></li>
             <li><a href="#">제목1</a></li>
             <li><a href="#">제목2</a></li>
             <li><a href="#">제목3</a></li>
+            @else
+            <li class="none_data">작성된 게시글이 없습니다.</li>
+            @endif
         </ul>
     </section>
    

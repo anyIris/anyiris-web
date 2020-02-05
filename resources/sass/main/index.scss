@@ -142,6 +142,14 @@
         ul{
             li{
                 margin-bottom: 6px;
+                &.none_data{
+                    padding-bottom: 4px;
+                    font-size: 0.9em;
+                    text-align: center;
+                    &::after{
+                        margin-top: 10px;
+                    }
+                }
                 a{
                     display: inline-block;
                     padding: 4px 10px 8px 0;

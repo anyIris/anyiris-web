@@ -12,8 +12,10 @@ class IndexController extends Controller
 
     public function index(){
         $repos = Github::getRepos(env('GITHUB_USER_NAME'));
+
         $viewData = [
-            "repos"=> $repos
+            "repos"=> $repos,
+            "recentPost" => []
         ];
         return view('frontend.index',$viewData);
     }

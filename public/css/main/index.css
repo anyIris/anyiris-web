@@ -207,6 +207,16 @@
   margin-bottom: 6px;
 }
 
+.bottom .summary ul li.none_data {
+  padding-bottom: 4px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.bottom .summary ul li.none_data::after {
+  margin-top: 10px;
+}
+
 .bottom .summary ul li a {
   display: inline-block;
   padding: 4px 10px 8px 0;

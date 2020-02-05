@@ -6,9 +6,10 @@ class UtilCurl{
 
     }
 
-    public static function connect($host, $isPost, $params=[], $options=[]){
-        $ch = curl_init($host);
-
+    public static function connect($url, $isPost, $params=array(), $options=array()){
+        $ch = curl_init();
+        $url = ($isPost ? $url : $url.'?'.http_build_query($params, '', '&'));
+        curl_setopt($ch, CURLOPT_URL, $url);
         if($isPost){
             curl_setopt($ch, CURLOPT_POST, $isPost);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
@@ -22,7 +23,6 @@ class UtilCurl{
         
         $result = curl_exec($ch);
         curl_close($ch);
-
         return $result;
 
     }
