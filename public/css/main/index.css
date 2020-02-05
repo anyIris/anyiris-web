@@ -219,11 +219,17 @@
 
 .bottom .summary ul li a {
   display: inline-block;
-  padding: 4px 10px 8px 0;
+  padding: 4px 10px 4px 0;
 }
 
 .bottom .summary ul li a:hover {
   color: #f2132d;
+}
+
+.bottom .summary ul li .description {
+  margin-bottom: 12px;
+  font-size: 0.8em;
+  color: #c5c6c7;
 }
 
 .bottom .summary ul li::after {

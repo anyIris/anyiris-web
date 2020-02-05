@@ -71,7 +71,10 @@
         <ul>
             @if($repos)
             @foreach($repos as $key => $value)
-            <li><a href="https://github.com/{{$value->full_name}}">{{$value->name}}</a></li>
+            <li>
+                <a href="https://github.com/{{$value->full_name}}">{{$value->name}}</a>
+                <p class="description">{{$value->description}}</p>
+            </li>
             @endforeach
             @else
             <li class="none_data">생성된 저장소가 없습니다.</li>
